@@ -1,7 +1,121 @@
-<script>
+<!-- How To find duplicate elements -->
+<!-- <script>
     const arrNumber = [1, 2, 2, 3, 4, 4, 5, 6, 7, 7]
 
     const duplicates = arrNumber.filter((element, index, arr) => arr.indexOf(element) !== index)
-
     console.log(duplicates)
-</script>
+
+    let index = 0, newArr = [];
+    const length = arrNumber.length;
+    function findDuplicates(arr) {
+        for (let i = 0; i < length - 1; i++) {
+            for (let j = i + 1; j < length; j++) {
+                if (arr[i] === arr[j]) {
+                    newArr[index] = arr[i]
+                    index++;
+                }
+            }
+        }
+        return newArr;
+    }
+
+    console.log(findDuplicates(arrNumber))
+</script> -->
+
+<!-- How To find max/min -->
+<!-- <script>
+    const arrNumber = [1, 2, 4, 7, 9]
+
+    const maxNum = (arr) => {
+        return arr.reduce(function (pre, cur) {
+            return pre > cur ? pre : cur
+        })
+    }
+    console.log(maxNum(arrNumber))
+    console.log(Math.max(arrNumber))
+    
+    const minNum = (arr) => {
+        return arr.reduce(function (pre, cur) {
+            return pre < cur ? pre : cur
+        })
+    }
+    console.log(minNum(arrNumber))
+    console.log(Math.min(arrNumber))
+</script> -->
+
+<!-- How To find second Largest value -->
+<!-- <script>
+    const arrNumber = [1, 2, 4, 7, 9]
+
+    const secondLarge = (arr) => {
+        large = Math.max(...arr)
+        index = arr.indexOf(large)
+        arr.splice(index, 1)
+        secondLargeValue = Math.max(...arr)
+        return secondLargeValue
+    }
+
+    console.log(secondLarge(arrNumber))
+</script> -->
+
+<!-- How to Find missing elements in a given Array -->
+<!-- <script>
+    const arrNumber = [1, 2, 4, 7, 9]
+
+    const missArray = []
+
+    const missingValue = (arr) => {
+        const minVal = Math.min(...arr)
+        const maxVal = Math.max(...arr)
+        for (let i = minVal; i < maxVal; i++) {
+            if (arr.indexOf(i) < 0) {
+                missArray.push(i)
+            }
+        }
+        return missArray
+    }
+
+    console.log(missingValue(arrNumber))
+</script> -->
+
+<!-- how to find even or odd numbers -->
+<!-- <script>
+    const arrNumber = [1, 2, 4, 7, 9]
+
+    const even = arrNumber.filter((item) => {
+        return item % 2 === 0
+    })
+
+    const odd = arrNumber.filter((item) => {
+        return item % 2 !== 0
+    })
+</script> -->
+
+<!-- how to find fictorial of a given number -->
+<!-- <script>
+    const inputNum = prompt("Enter Num")
+    var fact = 1;
+    if (inputNum < 0) {
+        console.log("not possible")
+    }
+    else {
+        for (let i = 1; i <= inputNum; i++) {
+            fact = fact * i
+        }
+        console.log(fact)
+    }
+</script> -->
+
+<!-- swap two variables without using the third -->
+<!-- <script>
+    let a = 7;
+    let b = 8;
+
+    // 1.
+    [a, b] = [b, a]
+
+    // 2.
+    a = a + b;
+    b = a - b;
+    a = a - b
+</script> -->
